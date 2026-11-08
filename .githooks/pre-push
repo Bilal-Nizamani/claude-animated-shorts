@@ -1,0 +1,20 @@
+#!/bin/sh
+# Inspect every outgoing commit, including media added and deleted before pushing.
+remote=$1
+while read -r local_ref local_oid remote_ref remote_oid; do
+    case "$local_oid" in
+        *[!0]*) ;;
+        *) continue ;;
+    esac
+    commits=$(git rev-list "$local_oid" --not "--remotes=$remote") || exit 1
+    for commit in $commits; do
+        paths=$(git ls-tree -r --name-only "$commit") || exit 1
+        blocked=$(printf '%s\n' "$paths" | git -c core.quotePath=false check-ignore --no-index --stdin)
+        case $? in
+            0) printf 'Push blocked. Move generated or private files outside Git:\n%s\n' "$blocked" >&2
+               exit 1 ;;
+            1) ;;
+            *) exit 1 ;;
+        esac
+    done
+done
