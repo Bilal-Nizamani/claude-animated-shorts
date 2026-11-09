@@ -6,7 +6,7 @@ It is built on the tooling in `main` of this repository (`claude-animated-shorts
 
 ## Set up a Mac (one command)
 
-Needs [Homebrew](https://brew.sh) and a GitHub login that can read this private repository (`gh auth login`, or an SSH key / token).
+Needs [Homebrew](https://brew.sh) and a GitHub login (`gh auth login`). **This repository is public unless you switch it to private in GitHub settings. Do that before adding anything personal, and never commit voice recordings.**
 
 ```bash
 mkdir -p ~/shorts/shorts-production && cd ~/shorts/shorts-production \
@@ -14,7 +14,7 @@ mkdir -p ~/shorts/shorts-production && cd ~/shorts/shorts-production \
   && bash first-short/scripts/setup-mac.sh
 ```
 
-That installs ffmpeg, Node, Python 3.12 and uv, clones the tooling next to this folder, creates the Python environment, downloads the Qwen3-TTS 0.6B and 1.7B models (about 6 GB, once) and installs the Remotion dependencies plus its headless Chrome. Layout afterwards:
+That installs ffmpeg, Node, Python 3.12 and uv, clones the tooling next to this folder, creates the Python environment, downloads the Qwen3-TTS 1.7B CustomVoice (preset voices + style instructions) and 1.7B Base (voice cloning) models (about 9 GB, once) and installs the Remotion dependencies plus its headless Chrome. Layout afterwards:
 
 ```
 ~/shorts/
@@ -33,7 +33,10 @@ bash scripts/make-short.sh render    # 1440x2560 render + sound + QA   -> out/ok
 bash scripts/make-short.sh all       # everything
 ```
 
-On a Mac with a real GPU the render should take a few minutes (`CONC=3` parallel tabs by default; lower it if memory is tight). Narration is the slow part: the 1.7B model runs on the CPU in float32 and needs about 9 GB of free RAM.
+On a Mac with a real GPU the render should take a few minutes (`CONC=3` parallel tabs by default; lower it if memory is tight). Narration is the slow part: each 1.7B model runs on the CPU in float32 and needs about 9 GB of free RAM (use a Mac with 16 GB or more).
+
+## Voice cloning (optional, local only)
+Put a clean 15-30 s WAV of a voice you have permission to clone, plus the EXACT words spoken, in `voice/reference/`. That folder is git-ignored on purpose because the repository is public. The clone uses `Qwen/Qwen3-TTS-12Hz-1.7B-Base` with the transcript in in-context mode. It copies the timbre but often not the speaker's delivery, so compare it with Aiden by ear.
 
 ## What to edit
 

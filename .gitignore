@@ -30,3 +30,6 @@ remotion/.cache/
 *.[Ww][Ee][Bb][Mm]
 *.[Aa][Vv][Ii]
 *.[Mm]4[Vv]
+
+# voice samples never go to Git (the repository is public)
+voice/reference/
