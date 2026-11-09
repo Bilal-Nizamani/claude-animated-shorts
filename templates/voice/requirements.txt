@@ -5,3 +5,5 @@ numpy
 scipy
 soundfile
 torch
+faster-whisper==1.2.1
+pillow

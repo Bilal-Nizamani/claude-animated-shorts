@@ -26,13 +26,50 @@ From the skill checkout, run the following with PowerShell and a working `py` la
 
 The default is the Apache-2.0 Qwen3-TTS 0.6B CustomVoice checkpoint with the English speaker Ryan. The CPU setup uses PyTorch SDPA. Use the same speaker and language across episodes for a consistent channel voice. The configuration is in `templates/voice/qwen.json`. [Qwen3-TTS model card](https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice) · [Qwen3-TTS setup and speaker list](https://github.com/QwenLM/Qwen3-TTS#quickstart)
 
+## One-time macOS / Linux setup
+
+Install Homebrew, then from the skill checkout run the following. It creates `../shorts-runtime/tts-venv` (Python 3.12), installs the dependencies and downloads the 0.6B (fast preset voices) and 1.7B (style instructions) checkpoints. ffmpeg from Homebrew includes the Rubber Band filter used for clean pace and pitch changes.
+
+```bash
+brew install ffmpeg node python@3.12 uv git
+bash templates/voice/setup-qwen.sh            # add --no-style to skip the 4.5 GB 1.7B model, --clone for voice cloning
+bash templates/voice/open-narration-studio.sh # the Narration Studio, same as the Windows launcher
+```
+
+Apple silicon runs the CPU path by default. `export QWEN_DEVICE=mps PYTORCH_ENABLE_MPS_FALLBACK=1` tries the Apple GPU for generation (not verified here, so compare a short line against the CPU result first).
+
+## Styled delivery with the 1.7B model
+
+The 0.6B CustomVoice model ignores style text (the library says so: "for 0b6 model, instruct is not supported"). The **1.7B CustomVoice** model takes a plain-English instruction per beat for tone, speaking rate and emotion. Add an `instruct` key to a beat in `delivery.json`; `qwen_narrate.py` then loads the 1.7B model (`style_model` in `qwen.json`).
+
+```json
+[
+  {"instruct": "Serious, hushed documentary narrator. Slow and deliberate, low in pitch. Lean on 'almost three days', then stop.", "pause_ms": 300},
+  {"instruct": "Tense and urgent, getting faster and louder as the storm hits, with a hard punch on 'flips'."}
+]
+```
+
+What was learned making the Okene short:
+
+- **Fewer, longer beats.** One take per sentence group flows; four tiny takes sound chopped because every take starts and ends the same way. Group by mood, not by comma.
+- **The model follows instructions loosely.** It ignored "quiet" and read a date louder than the action. Fix levels afterwards in the mix with a per-word gain table keyed to `words.json` (see `audio/okene_mix.py`, `LEVELS`).
+- **It sometimes stumbles** ("a ... huge" with a pause mid-phrase). `candidates.py` generates several takes of one beat, scores each for silent gaps inside the phrase and keeps the cleanest.
+- **Takes are cached per beat** in `voice/beats/` (keyed by text + instruction + voice), so changing one beat regenerates only that beat.
+- **Full precision on CPU.** `style_dtype` is `float32`: bfloat16 has no hardware support on older CPUs and ran more than ten times slower. The 1.7B model needs about 9 GB of RAM in float32.
+- **Pace and pitch:** `pace` / `pitch_semitones` use Rubber Band through ffmpeg (formant preserving) when ffmpeg is available, which avoids the hollow, tube-like smear of a phase vocoder.
+- **Voice EQ:** TTS voices come out boxy (a hump at 150-400 Hz) and dull above 3 kHz. A cut around 260 Hz, a presence boost near 3.5 kHz, light compression and a touch of air fixed that in `okene_mix.py`.
+
+## What this repository knows about how to talk
+
+Very little, and it is worth being clear about it. `STYLE_BIBLE.md` records the reference narrator as one male voice, "fast and steady", 3.5-4.1 words/s with almost no pauses, mixed at -14 LUFS. `delivery.json` can nudge pace, pitch and level "modestly". There are no recordings or transcripts of the reference narrator here (they are private study material), no pitch contours and no emphasis rules, so nothing in the repository can teach a text-to-speech model to perform. Expressive delivery comes from the 1.7B instructions above, from a recording you make yourself, or from cloning a voice that already reads the way you want.
+
 ## Narration Studio
 
 Double-click `Open Narration Studio.cmd` in Windows Explorer. It opens a browser tab on this computer. Leave the launcher window open while using the studio.
 
 1. Pick **Preset narrator** and select a voice, or pick **Clone a voice** and upload a WAV, FLAC or MP3 recording up to 25 MB. A clean clip of one person speaking for several seconds works best. Use your own voice or a recording you have permission to use.
 2. For cloning, optionally paste the exact words spoken in the recording. If the screen shows **Set up cloning**, click it once to download Qwen3-TTS 0.6B Base. [Qwen3-TTS cloning model](https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base)
-3. Choose the narration language and click **Save narrator**. The production command uses this voice on future shorts. Reopen the studio whenever you want to change it.
+3. Choose the narration language, enter a short line, and click **Test voice** to listen to your current selection. Click **Save narrator** when you want the production command to use that voice on future shorts.
 
 The studio runs on localhost. It stores the saved profile and its reference recording under `shorts-runtime/narrator/`, outside the Git checkout.
 
