@@ -1,0 +1,9 @@
+﻿[
+    {
+        "instruct":  "Serious, hushed documentary narrator. Slow and deliberate, low in pitch. Lean on the words \u0027almost three days\u0027, then stop completely. Then say \u0027Without an air tank\u0027 even slower and quieter, almost a whisper.",
+        "pause_ms":  300
+    },
+    {
+        "instruct":  "Calm and matter-of-fact on the date, quiet and low, almost casual. Then the tension builds through the sentence: faster and louder, rising in pitch, with a hard punch on the word \u0027flips\u0027, and the last words \u0027upside down\u0027 dropping away."
+    }
+]
