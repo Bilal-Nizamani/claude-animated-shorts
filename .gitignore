@@ -30,7 +30,3 @@ remotion/.cache/
 *.[Ww][Ee][Bb][Mm]
 *.[Aa][Vv][Ii]
 *.[Mm]4[Vv]
-
-# exception: the one reference clip for cloning experiments (see voice/reference/NOTICE.md)
-!voice/reference/
-!voice/reference/reference_50s_center.wav

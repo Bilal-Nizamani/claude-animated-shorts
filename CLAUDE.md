@@ -33,9 +33,3 @@ Nothing here has been run on a Mac yet. Fix what breaks, and tell the user exact
 1. One `instruct` per sentence with strong, concrete wording; generate 3-5 candidates and pick by ear (the user), not by metric.
 2. Fix level and pace per word in the mix (already done for the date/sentence: `LEVELS` in `okene_mix.py`).
 3. A recorded or cloned human voice (Qwen3-TTS 0.6B Base cloning, via the Narration Studio) - the most likely way to get a natural storyteller.
-
-## Voice cloning experiment (reference clip)
-- `voice/reference/reference_50s_center.wav` (+ `.txt` transcript, `NOTICE.md`) is a 50 s clip of the YouTube creator Dani, used by the repo owner's statement of his permission for **private experiments only**. Read `NOTICE.md`: never publish the clip, never use the clone in a published video without Dani's explicit permission, label AI voices. Keep the repository private.
-- The transcript is an automatic Whisper pass and has errors. Qwen's in-context cloning needs the EXACT words, so listen and correct the `.txt` first (ask the user to confirm).
-- Plan: use `Qwen/Qwen3-TTS-12Hz-1.7B-Base` (the `clone_model` in `claude-animated-shorts/templates/voice/qwen.json`; the 0.6B models were removed). Clone from this clip with `ref_text` set (not x-vector-only), say the same test sentence in Aiden and in the clone, and ask the user to compare by ear.
-- Set expectations: Qwen's clone copies the timbre but often not the speaker's delivery, so it can sound like "its own voice from the provided audio". The user already saw this with their own voice. If it is not close enough, the next step to evaluate is fine-tuning (e.g. GPT-SoVITS on CPU on the Mac), which needs more clean audio and the same permission.
