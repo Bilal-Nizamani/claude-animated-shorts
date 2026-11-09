@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # One-time Qwen3-TTS setup for macOS / Linux (the Windows twin is setup-qwen.ps1).
-#   bash templates/voice/setup-qwen.sh [--no-style] [--clone]
-# Creates ../shorts-runtime/tts-venv (Python 3.12) next to this checkout, installs the dependencies and downloads the models.
+#   bash templates/voice/setup-qwen.sh [--no-clone]
+# Creates ../shorts-runtime/tts-venv (Python 3.12) next to this checkout, installs the dependencies and downloads the Qwen3-TTS 1.7B CustomVoice and 1.7B Base models (about 9 GB).
 # Nothing here is committed to Git: shorts-runtime/ is outside the checkout.
 set -euo pipefail
 

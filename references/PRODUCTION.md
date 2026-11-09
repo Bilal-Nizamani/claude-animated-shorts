@@ -24,15 +24,15 @@ From the skill checkout, run the following with PowerShell and a working `py` la
 .\templates\voice\setup-qwen.ps1
 ```
 
-The default is the Apache-2.0 Qwen3-TTS 0.6B CustomVoice checkpoint with the English speaker Ryan. The CPU setup uses PyTorch SDPA. Use the same speaker and language across episodes for a consistent channel voice. The configuration is in `templates/voice/qwen.json`. [Qwen3-TTS model card](https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice) · [Qwen3-TTS setup and speaker list](https://github.com/QwenLM/Qwen3-TTS#quickstart)
+The default is the Apache-2.0 Qwen3-TTS **1.7B** CustomVoice checkpoint with the English speaker Ryan (the 0.6B models were dropped: they ignore style instructions and sound flatter). The CPU setup uses PyTorch SDPA. Use the same speaker and language across episodes for a consistent channel voice. The configuration is in `templates/voice/qwen.json`. [Qwen3-TTS model card](https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice) · [Qwen3-TTS setup and speaker list](https://github.com/QwenLM/Qwen3-TTS#quickstart)
 
 ## One-time macOS / Linux setup
 
-Install Homebrew, then from the skill checkout run the following. It creates `../shorts-runtime/tts-venv` (Python 3.12), installs the dependencies and downloads the 0.6B (fast preset voices) and 1.7B (style instructions) checkpoints. ffmpeg from Homebrew includes the Rubber Band filter used for clean pace and pitch changes.
+Install Homebrew, then from the skill checkout run the following. It creates `../shorts-runtime/tts-venv` (Python 3.12), installs the dependencies and downloads the 1.7B CustomVoice (preset voices + style instructions) and 1.7B Base (voice cloning) checkpoints, about 9 GB once. Each needs about 9 GB of free RAM in float32, so use a Mac with 16 GB or more. ffmpeg from Homebrew includes the Rubber Band filter used for clean pace and pitch changes.
 
 ```bash
 brew install ffmpeg node python@3.12 uv git
-bash templates/voice/setup-qwen.sh            # add --no-style to skip the 4.5 GB 1.7B model, --clone for voice cloning
+bash templates/voice/setup-qwen.sh            # add --no-clone to skip the 1.7B Base (voice cloning) model
 bash templates/voice/open-narration-studio.sh # the Narration Studio, same as the Windows launcher
 ```
 
@@ -68,7 +68,7 @@ Very little, and it is worth being clear about it. `STYLE_BIBLE.md` records the 
 Double-click `Open Narration Studio.cmd` in Windows Explorer. It opens a browser tab on this computer. Leave the launcher window open while using the studio.
 
 1. Pick **Preset narrator** and select a voice, or pick **Clone a voice** and upload a WAV, FLAC or MP3 recording up to 25 MB. A clean clip of one person speaking for several seconds works best. Use your own voice or a recording you have permission to use.
-2. For cloning, optionally paste the exact words spoken in the recording. If the screen shows **Set up cloning**, click it once to download Qwen3-TTS 0.6B Base. [Qwen3-TTS cloning model](https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base)
+2. For cloning, optionally paste the exact words spoken in the recording. If the screen shows **Set up cloning**, click it once to download Qwen3-TTS 1.7B Base. [Qwen3-TTS cloning model](https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base)
 3. Choose the narration language, enter a short line, and click **Test voice** to listen to your current selection. Click **Save narrator** when you want the production command to use that voice on future shorts.
 
 The studio runs on localhost. It stores the saved profile and its reference recording under `shorts-runtime/narrator/`, outside the Git checkout.
