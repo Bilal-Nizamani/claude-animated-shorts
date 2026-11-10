@@ -1,0 +1,1622 @@
+{
+ "short": {
+  "kind": "short",
+  "videos": 16,
+  "minutes": 15.0,
+  "words": 3326,
+  "sentences": 213,
+  "writing": {
+   "duration": {
+    "p10": 39.55,
+    "median": 60.95,
+    "p90": 65.4,
+    "min": 30.9,
+    "max": 77.9,
+    "mean": 56.3,
+    "n": 16
+   },
+   "words": {
+    "p10": 144.5,
+    "median": 220.5,
+    "p90": 247.0,
+    "min": 112.0,
+    "max": 295.0,
+    "mean": 207.875,
+    "n": 16
+   },
+   "wps": {
+    "p10": 3.529,
+    "median": 3.694,
+    "p90": 3.822,
+    "min": 3.359,
+    "max": 3.922,
+    "mean": 3.686,
+    "n": 16
+   },
+   "sentences": {
+    "p10": 9.0,
+    "median": 13.5,
+    "p90": 17.0,
+    "min": 7.0,
+    "max": 19.0,
+    "mean": 13.312,
+    "n": 16
+   },
+   "len_mean": {
+    "p10": 12.607,
+    "median": 15.052,
+    "p90": 20.667,
+    "min": 11.632,
+    "max": 31.286,
+    "mean": 16.327,
+    "n": 16
+   },
+   "len_median": {
+    "p10": 12.5,
+    "median": 14.0,
+    "p90": 19.25,
+    "min": 11.0,
+    "max": 21.0,
+    "mean": 14.844,
+    "n": 16
+   },
+   "len_p10": {
+    "p10": 3.8,
+    "median": 6.55,
+    "p90": 11.8,
+    "min": 3.2,
+    "max": 15.2,
+    "mean": 7.312,
+    "n": 16
+   },
+   "len_p90": {
+    "p10": 18.6,
+    "median": 26.4,
+    "p90": 31.55,
+    "min": 16.9,
+    "max": 66.6,
+    "mean": 27.788,
+    "n": 16
+   },
+   "short_share": {
+    "p10": 0.0,
+    "median": 12.132,
+    "p90": 37.647,
+    "min": 0.0,
+    "max": 42.105,
+    "mean": 16.406,
+    "n": 16
+   },
+   "long_share": {
+    "p10": 11.111,
+    "median": 29.412,
+    "p90": 48.077,
+    "min": 0.0,
+    "max": 66.667,
+    "mean": 30.364,
+    "n": 16
+   },
+   "len_cv": {
+    "p10": 0.247,
+    "median": 0.564,
+    "p90": 0.785,
+    "min": 0.188,
+    "max": 1.219,
+    "mean": 0.555,
+    "n": 16
+   },
+   "fk": {
+    "p10": 4.429,
+    "median": 5.759,
+    "p90": 8.413,
+    "min": 3.897,
+    "max": 13.207,
+    "mean": 6.28,
+    "n": 16
+   },
+   "word_len": {
+    "p10": 3.991,
+    "median": 4.107,
+    "p90": 4.346,
+    "min": 3.962,
+    "max": 4.493,
+    "mean": 4.145,
+    "n": 16
+   },
+   "you": {
+    "p10": 0.209,
+    "median": 1.518,
+    "p90": 7.131,
+    "min": 0.0,
+    "max": 9.545,
+    "mean": 2.723,
+    "n": 16
+   },
+   "me": {
+    "p10": 0.0,
+    "median": 0.0,
+    "p90": 0.455,
+    "min": 0.0,
+    "max": 0.498,
+    "mean": 0.186,
+    "n": 16
+   },
+   "questions": {
+    "p10": 0.0,
+    "median": 0.0,
+    "p90": 9.729,
+    "min": 0.0,
+    "max": 15.385,
+    "mean": 3.737,
+    "n": 16
+   },
+   "numbers": {
+    "p10": 0.729,
+    "median": 2.278,
+    "p90": 5.941,
+    "min": 0.405,
+    "max": 6.25,
+    "mean": 2.824,
+    "n": 16
+   },
+   "contrast": {
+    "p10": 11.111,
+    "median": 16.718,
+    "p90": 29.67,
+    "min": 0.0,
+    "max": 33.333,
+    "mean": 17.242,
+    "n": 16
+   },
+   "because": {
+    "p10": 0.0,
+    "median": 0.0,
+    "p90": 7.179,
+    "min": 0.0,
+    "max": 11.111,
+    "mean": 2.656,
+    "n": 16
+   },
+   "contractions": {
+    "p10": 2.044,
+    "median": 2.531,
+    "p90": 3.915,
+    "min": 1.205,
+    "max": 4.453,
+    "mean": 2.692,
+    "n": 16
+   },
+   "and_so_starts": {
+    "p10": 0.0,
+    "median": 16.026,
+    "p90": 32.051,
+    "min": 0.0,
+    "max": 33.333,
+    "mean": 15.077,
+    "n": 16
+   },
+   "you_exclaim": {
+    "p10": 0.0,
+    "median": 0.0,
+    "p90": 8.204,
+    "min": 0.0,
+    "max": 11.765,
+    "mean": 1.761,
+    "n": 16
+   },
+   "hook_words": {
+    "p10": 9.0,
+    "median": 14.0,
+    "p90": 20.5,
+    "min": 6.0,
+    "max": 23.0,
+    "mean": 14.188,
+    "n": 16
+   },
+   "hook_seconds": {
+    "p10": 2.49,
+    "median": 3.36,
+    "p90": 5.33,
+    "min": 1.3,
+    "max": 5.96,
+    "mean": 3.705,
+    "n": 16
+   },
+   "last_words": {
+    "p10": 7.0,
+    "median": 15.5,
+    "p90": 26.5,
+    "min": 6.0,
+    "max": 123.0,
+    "mean": 22.125,
+    "n": 16
+   },
+   "hook_kinds": {
+    "plain statement": 0.5,
+    "number in first 8 words": 0.31,
+    "paradox / tension word": 0.31,
+    "addresses 'you'": 0.19,
+    "if/imagine/you-address": 0.06
+   },
+   "device_position": {
+    "but": {
+     "mean": 0.327,
+     "min": 0.003,
+     "max": 0.706,
+     "used_by": 0.88
+    },
+    "question": {
+     "mean": 0.439,
+     "min": 0.274,
+     "max": 0.623,
+     "used_by": 0.44
+    },
+    "you": {
+     "mean": 0.214,
+     "min": 0.001,
+     "max": 0.805,
+     "used_by": 0.88
+    },
+    "because": {
+     "mean": 0.44,
+     "min": 0.047,
+     "max": 0.751,
+     "used_by": 0.38
+    },
+    "number": {
+     "mean": 0.198,
+     "min": 0.001,
+     "max": 0.933,
+     "used_by": 1.0
+    },
+    "mech": {
+     "mean": 0.27,
+     "min": 0.002,
+     "max": 0.793,
+     "used_by": 0.94
+    }
+   },
+   "phases": [
+    {
+     "words": 18.1,
+     "question": 0.0,
+     "but": 13.44,
+     "you": 35.94,
+     "number": 40.21,
+     "rate": 3.81
+    },
+    {
+     "words": 15.43,
+     "question": 8.33,
+     "but": 12.5,
+     "you": 21.87,
+     "number": 35.42,
+     "rate": 3.81
+    },
+    {
+     "words": 23.23,
+     "question": 1.56,
+     "but": 27.08,
+     "you": 24.48,
+     "number": 32.29,
+     "rate": 3.78
+    },
+    {
+     "words": 15.84,
+     "question": 6.0,
+     "but": 28.78,
+     "you": 34.67,
+     "number": 27.89,
+     "rate": 4.0
+    },
+    {
+     "words": 15.98,
+     "question": 0.0,
+     "but": 7.14,
+     "you": 27.38,
+     "number": 30.95,
+     "rate": 4.25
+    }
+   ],
+   "sentence_starters_share_pct": {
+    "so": 9.9,
+    "the": 9.9,
+    "he": 9.4,
+    "you": 7.5,
+    "but": 7.0,
+    "and": 3.8,
+    "then": 3.8,
+    "a": 2.3,
+    "his": 1.9,
+    "at": 1.9,
+    "if": 1.4,
+    "one": 0.9,
+    "which": 0.9,
+    "on": 0.9
+   },
+   "two_word_openers": {
+    "you see,": 9,
+    "so the": 3,
+    "he just": 3,
+    "there's a": 2,
+    "then, he": 2,
+    "but when": 2,
+    "so, you": 2,
+    "but the": 2,
+    "the two": 1,
+    "which one": 1,
+    "on one": 1,
+    "so, some": 1
+   },
+   "punch_after_long_pct": 19.9
+  },
+  "delivery": {
+   "sentence_speed_wps": {
+    "p10": 3.23,
+    "median": 3.89,
+    "p90": 4.54
+   },
+   "sentence_kinds": {
+    "all": {
+     "n": 213,
+     "rate": 1.02,
+     "level": -0.4,
+     "pitch": 0.04,
+     "pitch_slope": -2.59,
+     "pitch_range": 8.33,
+     "level_range": 12.96,
+     "level_slope": -0.19
+    },
+    "first sentence (the hook)": {
+     "n": 16,
+     "rate": 1.0,
+     "level": -0.29,
+     "pitch": 1.75,
+     "pitch_slope": -4.73,
+     "pitch_range": 8.44,
+     "level_range": 14.69,
+     "level_slope": 0.68
+    },
+    "contains a number": {
+     "n": 66,
+     "rate": 1.07,
+     "level": -0.2,
+     "pitch": 0.18,
+     "pitch_slope": -2.58,
+     "pitch_range": 9.11,
+     "level_range": 14.59,
+     "level_slope": -0.3
+    },
+    "long (>= 20 words)": {
+     "n": 63,
+     "rate": 1.01,
+     "level": -0.39,
+     "pitch": 0.05,
+     "pitch_slope": -1.82,
+     "pitch_range": 9.62,
+     "level_range": 17.24,
+     "level_slope": -0.5
+    },
+    "second sentence": {
+     "n": 16,
+     "rate": 0.96,
+     "level": 0.1,
+     "pitch": 0.44,
+     "pitch_slope": -2.76,
+     "pitch_range": 8.93,
+     "level_range": 14.44,
+     "level_slope": -0.46
+    },
+    "starts with so / and": {
+     "n": 31,
+     "rate": 1.05,
+     "level": 0.13,
+     "pitch": -0.06,
+     "pitch_slope": -2.55,
+     "pitch_range": 7.93,
+     "level_range": 13.13,
+     "level_slope": -1.1
+    },
+    "short (<= 6 words)": {
+     "n": 40,
+     "rate": 1.12,
+     "level": -1.09,
+     "pitch": -0.08,
+     "pitch_slope": -3.12,
+     "pitch_range": 5.68,
+     "level_range": 6.59,
+     "level_slope": 0.53
+    },
+    "short punch after a long sentence": {
+     "n": 17,
+     "rate": 1.2,
+     "level": -1.11,
+     "pitch": -0.89,
+     "pitch_slope": -0.29,
+     "pitch_range": 6.56,
+     "level_range": 6.99,
+     "level_slope": 0.39
+    },
+    "question": {
+     "n": 9,
+     "rate": 1.1,
+     "level": -0.78,
+     "pitch": 0.3,
+     "pitch_slope": -2.17,
+     "pitch_range": 6.7,
+     "level_range": 9.74,
+     "level_slope": 1.27
+    },
+    "addresses you": {
+     "n": 52,
+     "rate": 1.0,
+     "level": -0.31,
+     "pitch": 0.44,
+     "pitch_slope": -3.56,
+     "pitch_range": 8.59,
+     "level_range": 14.77,
+     "level_slope": 0.04
+    },
+    "explanation (because / turns out / you see)": {
+     "n": 21,
+     "rate": 0.97,
+     "level": -0.7,
+     "pitch": 0.36,
+     "pitch_slope": -3.83,
+     "pitch_range": 9.23,
+     "level_range": 15.0,
+     "level_slope": -0.64
+    },
+    "second to last": {
+     "n": 16,
+     "rate": 0.98,
+     "level": -0.84,
+     "pitch": -0.44,
+     "pitch_slope": -3.35,
+     "pitch_range": 8.96,
+     "level_range": 15.13,
+     "level_slope": 0.25
+    },
+    "last sentence": {
+     "n": 16,
+     "rate": 0.96,
+     "level": -0.16,
+     "pitch": -1.28,
+     "pitch_slope": -3.74,
+     "pitch_range": 9.08,
+     "level_range": 12.79,
+     "level_slope": -1.12
+    },
+    "contains but / yet / however": {
+     "n": 37,
+     "rate": 1.0,
+     "level": -0.59,
+     "pitch": 0.07,
+     "pitch_slope": -1.18,
+     "pitch_range": 8.82,
+     "level_range": 16.03,
+     "level_slope": -0.25
+    },
+    "starts with but / however / yet": {
+     "n": 16,
+     "rate": 1.02,
+     "level": -0.57,
+     "pitch": -0.02,
+     "pitch_slope": -1.16,
+     "pitch_range": 8.15,
+     "level_range": 15.08,
+     "level_slope": -0.13
+    },
+    "exclamation": {
+     "n": 5,
+     "rate": 1.07,
+     "level": 1.08,
+     "pitch": 1.02,
+     "pitch_slope": 0.43,
+     "pitch_range": 6.85,
+     "level_range": 13.26,
+     "level_slope": -1.2
+    }
+   },
+   "pauses": {
+    "sentence": {
+     "n": 77,
+     "per10s": 0.85,
+     "median": 0.3,
+     "p90": 0.42,
+     "longest": 0.54
+    },
+    "comma": {
+     "n": 45,
+     "per10s": 0.5,
+     "median": 0.28,
+     "p90": 0.39,
+     "longest": 0.56
+    },
+    "inside": {
+     "n": 10,
+     "per10s": 0.11,
+     "median": 0.35,
+     "p90": 0.38,
+     "longest": 0.42
+    }
+   },
+   "pause_positions": {
+    "after a sentence end": {
+     "n": 77,
+     "median": 0.3,
+     "p90": 0.42
+    },
+    "after a comma": {
+     "n": 45,
+     "median": 0.28,
+     "p90": 0.39
+    },
+    "after a question": {
+     "n": 4,
+     "median": 0.29,
+     "p90": 0.34
+    },
+    "before 'you'": {
+     "n": 9,
+     "median": 0.28,
+     "p90": 0.35
+    },
+    "before but / yet / however": {
+     "n": 6,
+     "median": 0.31,
+     "p90": 0.33
+    },
+    "before a number": {
+     "n": 2,
+     "median": 0.29,
+     "p90": 0.36
+    }
+   },
+   "pause_after_hook_s": 0.15,
+   "arcs": [
+    {
+     "k": 0,
+     "rate": 1.007,
+     "level": 0.084,
+     "pitch": 1.014
+    },
+    {
+     "k": 1,
+     "rate": 1.002,
+     "level": 0.196,
+     "pitch": 0.226
+    },
+    {
+     "k": 2,
+     "rate": 0.991,
+     "level": 0.527,
+     "pitch": 0.488
+    },
+    {
+     "k": 3,
+     "rate": 1.019,
+     "level": -0.035,
+     "pitch": -0.02
+    },
+    {
+     "k": 4,
+     "rate": 1.006,
+     "level": -0.016,
+     "pitch": 0.978
+    },
+    {
+     "k": 5,
+     "rate": 0.985,
+     "level": -0.285,
+     "pitch": -0.157
+    },
+    {
+     "k": 6,
+     "rate": 1.038,
+     "level": -0.254,
+     "pitch": -0.711
+    },
+    {
+     "k": 7,
+     "rate": 1.032,
+     "level": -0.123,
+     "pitch": -0.448
+    },
+    {
+     "k": 8,
+     "rate": 0.992,
+     "level": -0.16,
+     "pitch": -0.331
+    },
+    {
+     "k": 9,
+     "rate": 0.928,
+     "level": 0.065,
+     "pitch": -1.04
+    }
+   ],
+   "pushed_words": {
+    "any word": {
+     "n": 3308,
+     "p_push": 15.48,
+     "lift": 1.0,
+     "level_z": -0.0,
+     "dur": 1.17,
+     "up": -0.03
+    },
+    "first word of the sentence": {
+     "n": 203,
+     "p_push": 17.24,
+     "lift": 1.11,
+     "level_z": -0.18,
+     "dur": 1.73,
+     "up": 0.86
+    },
+    "other long content words": {
+     "n": 963,
+     "p_push": 19.0,
+     "lift": 1.23,
+     "level_z": 0.3,
+     "dur": 0.88,
+     "up": 1.15
+    },
+    "numbers": {
+     "n": 89,
+     "p_push": 26.97,
+     "lift": 1.74,
+     "level_z": 0.33,
+     "dur": 2.02,
+     "up": 2.12
+    },
+    "negations (not, never, no, without)": {
+     "n": 53,
+     "p_push": 11.32,
+     "lift": 0.73,
+     "level_z": -0.01,
+     "dur": 1.16,
+     "up": 0.76
+    },
+    "intensifiers / extremes (only, every, first, last, ever)": {
+     "n": 153,
+     "p_push": 26.14,
+     "lift": 1.69,
+     "level_z": 0.37,
+     "dur": 1.54,
+     "up": 2.31
+    },
+    "last word of the sentence": {
+     "n": 203,
+     "p_push": 10.84,
+     "lift": 0.7,
+     "level_z": -0.16,
+     "dur": 0.96,
+     "up": -2.67
+    },
+    "question words (why, how, what)": {
+     "n": 43,
+     "p_push": 4.65,
+     "lift": 0.3,
+     "level_z": -0.1,
+     "dur": 1.26,
+     "up": -0.55
+    },
+    "you / your": {
+     "n": 78,
+     "p_push": 8.97,
+     "lift": 0.58,
+     "level_z": -0.27,
+     "dur": 1.09,
+     "up": -0.49
+    },
+    "names (capitalised inside a sentence)": {
+     "n": 26,
+     "p_push": 23.08,
+     "lift": 1.49,
+     "level_z": 0.27,
+     "dur": 1.11,
+     "up": -0.44
+    },
+    "contrast (but, yet, however)": {
+     "n": 40,
+     "p_push": 2.5,
+     "lift": 0.16,
+     "level_z": -0.17,
+     "dur": 1.92,
+     "up": -2.35
+    }
+   },
+   "base_push_pct": 15.5,
+   "lufs": {
+    "p10": -12.05,
+    "median": -11.05,
+    "p90": -11.0,
+    "min": -12.5,
+    "max": -11.0,
+    "mean": -11.369,
+    "n": 16
+   },
+   "lra": {
+    "p10": 1.7,
+    "median": 2.2,
+    "p90": 2.75,
+    "min": 1.7,
+    "max": 3.5,
+    "mean": 2.225,
+    "n": 16
+   },
+   "lead_in_s": {
+    "p10": 0.05,
+    "median": 0.08,
+    "p90": 0.14,
+    "min": 0.04,
+    "max": 0.2,
+    "mean": 0.095,
+    "n": 16
+   },
+   "tail_s": {
+    "p10": 0.17,
+    "median": 0.25,
+    "p90": 0.405,
+    "min": 0.09,
+    "max": 0.46,
+    "mean": 0.262,
+    "n": 16
+   },
+   "voice_hz": {
+    "p10": 177.0,
+    "median": 192.0,
+    "p90": 206.5,
+    "min": 171.0,
+    "max": 209.0,
+    "mean": 191.875,
+    "n": 16
+   },
+   "pitch_range_in_sentence_st": {
+    "p10": 7.533,
+    "median": 8.427,
+    "p90": 9.364,
+    "min": 7.338,
+    "max": 9.814,
+    "mean": 8.441,
+    "n": 16
+   },
+   "level_range_in_sentence_db": {
+    "p10": 11.912,
+    "median": 13.054,
+    "p90": 14.407,
+    "min": 11.171,
+    "max": 15.078,
+    "mean": 13.132,
+    "n": 16
+   },
+   "whole_video_wps": {
+    "p10": 3.529,
+    "median": 3.694,
+    "p90": 3.822,
+    "min": 3.359,
+    "max": 3.922,
+    "mean": 3.686,
+    "n": 16
+   }
+  }
+ },
+ "long": {
+  "kind": "long",
+  "videos": 4,
+  "minutes": 47.9,
+  "words": 7297,
+  "sentences": 473,
+  "writing": {
+   "duration": {
+    "p10": 364.69,
+    "median": 805.7,
+    "p90": 1003.39,
+    "min": 213.4,
+    "max": 1050.4,
+    "mean": 718.8,
+    "n": 4
+   },
+   "words": {
+    "p10": 935.3,
+    "median": 2080.5,
+    "p90": 2508.2,
+    "min": 494.0,
+    "max": 2642.0,
+    "mean": 1824.25,
+    "n": 4
+   },
+   "wps": {
+    "p10": 2.358,
+    "median": 2.486,
+    "p90": 2.671,
+    "min": 2.315,
+    "max": 2.738,
+    "mean": 2.506,
+    "n": 4
+   },
+   "sentences": {
+    "p10": 67.3,
+    "median": 141.0,
+    "p90": 151.0,
+    "min": 37.0,
+    "max": 154.0,
+    "mean": 118.25,
+    "n": 4
+   },
+   "len_mean": {
+    "p10": 13.618,
+    "median": 14.745,
+    "p90": 16.584,
+    "min": 13.351,
+    "max": 17.156,
+    "mean": 14.999,
+    "n": 4
+   },
+   "len_median": {
+    "p10": 13.0,
+    "median": 13.5,
+    "p90": 14.7,
+    "min": 13.0,
+    "max": 15.0,
+    "mean": 13.75,
+    "n": 4
+   },
+   "len_p10": {
+    "p10": 4.35,
+    "median": 4.85,
+    "p90": 6.4,
+    "min": 4.2,
+    "max": 7.0,
+    "mean": 5.225,
+    "n": 4
+   },
+   "len_p90": {
+    "p10": 23.95,
+    "median": 26.0,
+    "p90": 27.91,
+    "min": 23.8,
+    "max": 28.0,
+    "mean": 25.95,
+    "n": 4
+   },
+   "short_share": {
+    "p10": 11.146,
+    "median": 17.43,
+    "p90": 19.287,
+    "min": 9.091,
+    "max": 19.444,
+    "mean": 15.849,
+    "n": 4
+   },
+   "long_share": {
+    "p10": 18.308,
+    "median": 25.83,
+    "p90": 31.723,
+    "min": 16.216,
+    "max": 33.117,
+    "mean": 25.248,
+    "n": 4
+   },
+   "len_cv": {
+    "p10": 0.537,
+    "median": 0.566,
+    "p90": 0.601,
+    "min": 0.535,
+    "max": 0.606,
+    "mean": 0.568,
+    "n": 4
+   },
+   "fk": {
+    "p10": 7.567,
+    "median": 8.255,
+    "p90": 9.107,
+    "min": 7.438,
+    "max": 9.305,
+    "mean": 8.313,
+    "n": 4
+   },
+   "word_len": {
+    "p10": 4.658,
+    "median": 4.689,
+    "p90": 4.711,
+    "min": 4.653,
+    "max": 4.712,
+    "mean": 4.685,
+    "n": 4
+   },
+   "you": {
+    "p10": 0.936,
+    "median": 2.176,
+    "p90": 5.059,
+    "min": 0.643,
+    "max": 6.056,
+    "mean": 2.763,
+    "n": 4
+   },
+   "me": {
+    "p10": 1.052,
+    "median": 2.27,
+    "p90": 3.147,
+    "min": 0.611,
+    "max": 3.441,
+    "mean": 2.148,
+    "n": 4
+   },
+   "questions": {
+    "p10": 0.625,
+    "median": 2.99,
+    "p90": 4.72,
+    "min": 0.0,
+    "max": 5.072,
+    "mean": 2.763,
+    "n": 4
+   },
+   "numbers": {
+    "p10": 0.807,
+    "median": 1.662,
+    "p90": 2.428,
+    "min": 0.509,
+    "max": 2.687,
+    "mean": 1.63,
+    "n": 4
+   },
+   "contrast": {
+    "p10": 9.659,
+    "median": 13.496,
+    "p90": 17.591,
+    "min": 8.442,
+    "max": 18.919,
+    "mean": 13.588,
+    "n": 4
+   },
+   "because": {
+    "p10": 0.0,
+    "median": 0.725,
+    "p90": 4.81,
+    "min": 0.0,
+    "max": 6.25,
+    "mean": 1.925,
+    "n": 4
+   },
+   "contractions": {
+    "p10": 1.526,
+    "median": 1.73,
+    "p90": 2.22,
+    "min": 1.438,
+    "max": 2.429,
+    "mean": 1.832,
+    "n": 4
+   },
+   "and_so_starts": {
+    "p10": 0.195,
+    "median": 3.223,
+    "p90": 6.6,
+    "min": 0.0,
+    "max": 6.944,
+    "mean": 3.348,
+    "n": 4
+   },
+   "you_exclaim": {
+    "p10": 0.0,
+    "median": 0.0,
+    "p90": 1.892,
+    "min": 0.0,
+    "max": 2.703,
+    "mean": 0.676,
+    "n": 4
+   },
+   "hook_words": {
+    "p10": 3.9,
+    "median": 8.0,
+    "p90": 10.0,
+    "min": 3.0,
+    "max": 10.0,
+    "mean": 7.25,
+    "n": 4
+   },
+   "hook_seconds": {
+    "p10": 1.924,
+    "median": 3.2,
+    "p90": 4.448,
+    "min": 1.84,
+    "max": 4.52,
+    "mean": 3.19,
+    "n": 4
+   },
+   "last_words": {
+    "p10": 3.4,
+    "median": 13.5,
+    "p90": 18.0,
+    "min": 1.0,
+    "max": 18.0,
+    "mean": 11.5,
+    "n": 4
+   },
+   "hook_kinds": {
+    "plain statement": 0.5,
+    "paradox / tension word": 0.25,
+    "addresses 'you'": 0.5
+   },
+   "device_position": {
+    "but": {
+     "mean": 0.021,
+     "min": 0.0,
+     "max": 0.052,
+     "used_by": 1.0
+    },
+    "question": {
+     "mean": 0.114,
+     "min": 0.032,
+     "max": 0.206,
+     "used_by": 0.75
+    },
+    "you": {
+     "mean": 0.009,
+     "min": 0.0,
+     "max": 0.023,
+     "used_by": 1.0
+    },
+    "because": {
+     "mean": 0.229,
+     "min": 0.11,
+     "max": 0.347,
+     "used_by": 0.5
+    },
+    "number": {
+     "mean": 0.073,
+     "min": 0.003,
+     "max": 0.203,
+     "used_by": 1.0
+    },
+    "mech": {
+     "mean": 0.293,
+     "min": 0.11,
+     "max": 0.495,
+     "used_by": 1.0
+    }
+   },
+   "phases": [
+    {
+     "words": 14.82,
+     "question": 4.44,
+     "but": 19.73,
+     "you": 14.58,
+     "number": 16.64,
+     "rate": 3.24
+    },
+    {
+     "words": 15.63,
+     "question": 5.18,
+     "but": 10.31,
+     "you": 10.91,
+     "number": 17.88,
+     "rate": 3.08
+    },
+    {
+     "words": 16.14,
+     "question": 0.89,
+     "but": 15.27,
+     "you": 36.38,
+     "number": 11.24,
+     "rate": 3.12
+    },
+    {
+     "words": 15.47,
+     "question": 2.68,
+     "but": 17.34,
+     "you": 28.21,
+     "number": 17.01,
+     "rate": 3.73
+    },
+    {
+     "words": 13.19,
+     "question": 0.81,
+     "but": 4.94,
+     "you": 40.15,
+     "number": 15.94,
+     "rate": 3.38
+    }
+   ],
+   "sentence_starters_share_pct": {
+    "the": 7.4,
+    "but": 4.7,
+    "if": 3.2,
+    "it": 3.0,
+    "this": 2.7,
+    "in": 2.7,
+    "we": 2.7,
+    "and": 2.5,
+    "you": 1.9,
+    "a": 1.7,
+    "your": 1.7,
+    "it's": 0.8,
+    "that's": 0.8,
+    "my": 0.6
+   },
+   "two_word_openers": {
+    "this is": 10,
+    "if you": 8,
+    "we don't": 4,
+    "in the": 4,
+    "but the": 4,
+    "over the": 2,
+    "after a": 2,
+    "around the": 2,
+    "it was": 2,
+    "it's not": 2,
+    "if you're": 2,
+    "that's not": 1
+   },
+   "punch_after_long_pct": 15.3
+  },
+  "delivery": {
+   "sentence_speed_wps": {
+    "p10": 2.39,
+    "median": 2.98,
+    "p90": 3.81
+   },
+   "sentence_kinds": {
+    "all": {
+     "n": 473,
+     "rate": 1.13,
+     "level": -0.17,
+     "pitch": -0.13,
+     "pitch_slope": -0.45,
+     "pitch_range": 6.88,
+     "level_range": 11.18,
+     "level_slope": -0.44
+    },
+    "first sentence (the hook)": {
+     "n": 4,
+     "rate": 0.77,
+     "level": -3.79,
+     "pitch": -0.27,
+     "pitch_slope": null,
+     "pitch_range": null,
+     "level_range": 14.15,
+     "level_slope": 5.4
+    },
+    "short (<= 6 words)": {
+     "n": 71,
+     "rate": 1.77,
+     "level": -1.5,
+     "pitch": -1.23,
+     "pitch_slope": -1.55,
+     "pitch_range": 7.0,
+     "level_range": 5.72,
+     "level_slope": -0.71
+    },
+    "second sentence": {
+     "n": 4,
+     "rate": 1.18,
+     "level": 0.86,
+     "pitch": 0.25,
+     "pitch_slope": 0.22,
+     "pitch_range": 6.25,
+     "level_range": 12.23,
+     "level_slope": -2.8
+    },
+    "contains a number": {
+     "n": 79,
+     "rate": 0.99,
+     "level": 0.03,
+     "pitch": 0.09,
+     "pitch_slope": -0.51,
+     "pitch_range": 6.73,
+     "level_range": 11.86,
+     "level_slope": -0.65
+    },
+    "long (>= 20 words)": {
+     "n": 130,
+     "rate": 1.01,
+     "level": 0.15,
+     "pitch": 0.27,
+     "pitch_slope": 0.1,
+     "pitch_range": 7.59,
+     "level_range": 14.19,
+     "level_slope": -0.22
+    },
+    "short punch after a long sentence": {
+     "n": 35,
+     "rate": 1.93,
+     "level": -0.97,
+     "pitch": -1.89,
+     "pitch_slope": -3.04,
+     "pitch_range": 6.39,
+     "level_range": 5.88,
+     "level_slope": -1.35
+    },
+    "addresses you": {
+     "n": 126,
+     "rate": 1.07,
+     "level": -0.3,
+     "pitch": 0.69,
+     "pitch_slope": -0.48,
+     "pitch_range": 7.27,
+     "level_range": 12.24,
+     "level_slope": -0.58
+    },
+    "contains but / yet / however": {
+     "n": 58,
+     "rate": 1.04,
+     "level": 0.0,
+     "pitch": -0.21,
+     "pitch_slope": -0.16,
+     "pitch_range": 7.34,
+     "level_range": 13.42,
+     "level_slope": -0.24
+    },
+    "starts with so / and": {
+     "n": 19,
+     "rate": 1.07,
+     "level": 0.55,
+     "pitch": 0.8,
+     "pitch_slope": -2.58,
+     "pitch_range": 6.07,
+     "level_range": 10.59,
+     "level_slope": -0.93
+    },
+    "question": {
+     "n": 16,
+     "rate": 1.1,
+     "level": 0.0,
+     "pitch": 1.78,
+     "pitch_slope": 0.1,
+     "pitch_range": 6.69,
+     "level_range": 11.22,
+     "level_slope": -0.04
+    },
+    "starts with but / however / yet": {
+     "n": 22,
+     "rate": 1.13,
+     "level": 0.06,
+     "pitch": -0.15,
+     "pitch_slope": -1.38,
+     "pitch_range": 7.75,
+     "level_range": 12.37,
+     "level_slope": -0.37
+    },
+    "explanation (because / turns out / you see)": {
+     "n": 16,
+     "rate": 0.99,
+     "level": 0.17,
+     "pitch": 0.28,
+     "pitch_slope": -0.35,
+     "pitch_range": 6.9,
+     "level_range": 14.52,
+     "level_slope": 0.28
+    },
+    "second to last": {
+     "n": 4,
+     "rate": 1.21,
+     "level": -1.41,
+     "pitch": 5.3,
+     "pitch_slope": null,
+     "pitch_range": null,
+     "level_range": 10.22,
+     "level_slope": -1.15
+    },
+    "last sentence": {
+     "n": 4,
+     "rate": 0.87,
+     "level": -6.41,
+     "pitch": 3.39,
+     "pitch_slope": -5.88,
+     "pitch_range": 9.24,
+     "level_range": 11.27,
+     "level_slope": -3.85
+    },
+    "exclamation": {
+     "n": 1,
+     "rate": 0.51,
+     "level": -7.3,
+     "pitch": -8.3,
+     "pitch_slope": null,
+     "pitch_range": null,
+     "level_range": 14.7,
+     "level_slope": 14.7
+    }
+   },
+   "pauses": {
+    "sentence": {
+     "n": 432,
+     "per10s": 1.5,
+     "median": 0.76,
+     "p90": 1.12,
+     "longest": 5.58
+    },
+    "comma": {
+     "n": 305,
+     "per10s": 1.06,
+     "median": 0.4,
+     "p90": 0.66,
+     "longest": 3.6
+    },
+    "inside": {
+     "n": 28,
+     "per10s": 0.1,
+     "median": 0.36,
+     "p90": 0.5,
+     "longest": 1.18
+    }
+   },
+   "pause_positions": {
+    "after a sentence end": {
+     "n": 432,
+     "median": 0.76,
+     "p90": 1.12
+    },
+    "before a number": {
+     "n": 18,
+     "median": 0.68,
+     "p90": 1.18
+    },
+    "after a comma": {
+     "n": 305,
+     "median": 0.4,
+     "p90": 0.66
+    },
+    "before but / yet / however": {
+     "n": 39,
+     "median": 0.68,
+     "p90": 0.98
+    },
+    "after a question": {
+     "n": 14,
+     "median": 0.75,
+     "p90": 1.27
+    },
+    "before 'you'": {
+     "n": 15,
+     "median": 0.56,
+     "p90": 1.2
+    }
+   },
+   "pause_after_hook_s": 0.62,
+   "arcs": [
+    {
+     "k": 0,
+     "rate": 1.014,
+     "level": -0.66,
+     "pitch": -0.224
+    },
+    {
+     "k": 1,
+     "rate": 1.009,
+     "level": 0.49,
+     "pitch": -1.339
+    },
+    {
+     "k": 2,
+     "rate": 1.001,
+     "level": 0.49,
+     "pitch": 0.131
+    },
+    {
+     "k": 3,
+     "rate": 0.983,
+     "level": 0.29,
+     "pitch": 0.674
+    },
+    {
+     "k": 4,
+     "rate": 1.05,
+     "level": -0.21,
+     "pitch": 0.169
+    },
+    {
+     "k": 5,
+     "rate": 1.081,
+     "level": -0.21,
+     "pitch": -0.059
+    },
+    {
+     "k": 6,
+     "rate": 1.031,
+     "level": 0.14,
+     "pitch": 0.299
+    },
+    {
+     "k": 7,
+     "rate": 1.043,
+     "level": 0.14,
+     "pitch": -0.276
+    },
+    {
+     "k": 8,
+     "rate": 1.043,
+     "level": 0.04,
+     "pitch": 0.264
+    },
+    {
+     "k": 9,
+     "rate": 0.745,
+     "level": -0.51,
+     "pitch": 0.361
+    }
+   ],
+   "pushed_words": {
+    "any word": {
+     "n": 7246,
+     "p_push": 10.47,
+     "lift": 1.0,
+     "level_z": 0.0,
+     "dur": 1.28,
+     "up": 0.22
+    },
+    "first word of the sentence": {
+     "n": 445,
+     "p_push": 9.89,
+     "lift": 0.94,
+     "level_z": -0.12,
+     "dur": 1.69,
+     "up": 0.2
+    },
+    "negations (not, never, no, without)": {
+     "n": 92,
+     "p_push": 9.78,
+     "lift": 0.93,
+     "level_z": 0.13,
+     "dur": 1.15,
+     "up": 0.39
+    },
+    "last word of the sentence": {
+     "n": 445,
+     "p_push": 2.25,
+     "lift": 0.21,
+     "level_z": -0.32,
+     "dur": 0.96,
+     "up": -1.82
+    },
+    "other long content words": {
+     "n": 2589,
+     "p_push": 9.31,
+     "lift": 0.89,
+     "level_z": 0.19,
+     "dur": 0.86,
+     "up": 0.65
+    },
+    "numbers": {
+     "n": 123,
+     "p_push": 19.51,
+     "lift": 1.86,
+     "level_z": 0.31,
+     "dur": 2.32,
+     "up": 0.16
+    },
+    "intensifiers / extremes (only, every, first, last, ever)": {
+     "n": 214,
+     "p_push": 19.63,
+     "lift": 1.87,
+     "level_z": 0.27,
+     "dur": 1.3,
+     "up": 0.99
+    },
+    "you / your": {
+     "n": 201,
+     "p_push": 6.97,
+     "lift": 0.66,
+     "level_z": -0.11,
+     "dur": 0.99,
+     "up": -0.2
+    },
+    "names (capitalised inside a sentence)": {
+     "n": 116,
+     "p_push": 13.79,
+     "lift": 1.32,
+     "level_z": 0.18,
+     "dur": 1.5,
+     "up": 0.34
+    },
+    "contrast (but, yet, however)": {
+     "n": 57,
+     "p_push": 14.04,
+     "lift": 1.34,
+     "level_z": 0.07,
+     "dur": 1.57,
+     "up": -0.62
+    },
+    "question words (why, how, what)": {
+     "n": 94,
+     "p_push": 14.89,
+     "lift": 1.42,
+     "level_z": 0.28,
+     "dur": 1.38,
+     "up": -0.29
+    }
+   },
+   "base_push_pct": 10.5,
+   "lufs": {
+    "p10": -13.01,
+    "median": -12.45,
+    "p90": -12.1,
+    "min": -13.1,
+    "max": -12.1,
+    "mean": -12.525,
+    "n": 4
+   },
+   "lra": {
+    "p10": 2.36,
+    "median": 2.6,
+    "p90": 2.7,
+    "min": 2.3,
+    "max": 2.7,
+    "mean": 2.55,
+    "n": 4
+   },
+   "lead_in_s": {
+    "p10": 0.1,
+    "median": 0.12,
+    "p90": 0.322,
+    "min": 0.1,
+    "max": 0.4,
+    "mean": 0.185,
+    "n": 4
+   },
+   "tail_s": {
+    "p10": 6.869,
+    "median": 14.755,
+    "p90": 17.125,
+    "min": 4.1,
+    "max": 17.53,
+    "mean": 12.785,
+    "n": 4
+   },
+   "voice_hz": {
+    "p10": 91.3,
+    "median": 98.0,
+    "p90": 106.1,
+    "min": 91.0,
+    "max": 107.0,
+    "mean": 98.5,
+    "n": 4
+   },
+   "pitch_range_in_sentence_st": {
+    "p10": 6.325,
+    "median": 7.012,
+    "p90": 7.439,
+    "min": 6.076,
+    "max": 7.578,
+    "mean": 6.919,
+    "n": 4
+   },
+   "level_range_in_sentence_db": {
+    "p10": 9.834,
+    "median": 10.863,
+    "p90": 11.853,
+    "min": 9.408,
+    "max": 12.263,
+    "mean": 10.849,
+    "n": 4
+   },
+   "whole_video_wps": {
+    "p10": 2.358,
+    "median": 2.486,
+    "p90": 2.671,
+    "min": 2.315,
+    "max": 2.738,
+    "mean": 2.506,
+    "n": 4
+   }
+  },
+  "sections": [
+   {
+    "sections": 6,
+    "mean_len_s": 149
+   },
+   {
+    "sections": 7,
+    "mean_len_s": 150
+   },
+   {
+    "sections": 5,
+    "mean_len_s": 144
+   },
+   {
+    "sections": 2,
+    "mean_len_s": 107
+   }
+  ]
+ }
+}
