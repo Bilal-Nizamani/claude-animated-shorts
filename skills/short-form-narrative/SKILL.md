@@ -18,7 +18,7 @@ Full tables: [references/SHORT_FORM_DATA.md](references/SHORT_FORM_DATA.md). Mac
 3. **Check it:** `python skills/_shared/script_check.py script.txt --format short`. It says OK / EDGE / OUT for every measure against the measured shorts and gives a fix list. Fix, re-run, until the list is empty or you can defend each remaining difference.
 4. **Plan the delivery:** `python skills/_shared/delivery_plan.py script.txt --format short --out <workspace>`. It writes `narration.txt` (takes), `delivery.json` (instruction per take), `plan.json` and a readable `delivery_plan.md`: per sentence the speed, level, pitch guidance, pause after it and the word to push.
 5. **Build the voice:** `python skills/_shared/build_voice.py <workspace>` (needs the venv from `templates/voice/setup-qwen.sh`, Qwen3-TTS 1.7B). It generates two candidates per take, keeps the clean one, stretches each take to its target words/s, sets the sentence pauses, pushes the planned words, applies EQ and compression and masters to -11 LUFS. It also writes the word timings for syncing pictures.
-6. **Music:** section C. **Mix:** voice first, bed about 11 dB under it, -11 LUFS master, true peak <= -1.2 dBTP.
+6. **Music:** section C. **Mix:** voice first, bed about 14-16 dB under it, -11 LUFS master, true peak <= -1.2 dBTP.
 7. **You cannot hear audio.** Never claim the voice sounds good. Export the layers as WAV, report the measured numbers and ask the user to listen. The user's ear decides; then adjust the plan (not the rules) and rebuild only the takes that changed.
 
 ## A. The script formula (what the 16 shorts do)
@@ -79,13 +79,12 @@ Measured as ratios to the same video's own median sentence, so they transfer to 
 
 ## C. Music
 
-**Provisional (v1, read from the mixed audio, so tempo and key are estimates):**
-- It is a **steady bed under the whole story**: starts at the first word (0.1 s) and ends at the last (0.1-0.5 s), no intro, no outro tail, no swells (the level moves +-0.5 dB over the running time) and no measurable ducking.
-- **Level:** the voice sits about 11 dB above the bed (p10-p90 9.6-12.6 dB).
-- **Character:** no strong drum pulse (beat strength near zero in 14 of 16); the tempo estimates cluster at 83-136 bpm (median 107) but are weak; mostly minor-leaning, D minor the most frequent where the key estimate was confident; bright-ish bed (spectral centre 3.5-5.3 kHz).
-- A separated-music analysis (v2) is in [references/MUSIC.md](references/MUSIC.md) when present; prefer its numbers.
+Measured from the **separated music stems** of 10 shorts (full tables: [references/MUSIC.md](references/MUSIC.md)). Small sample; tempo and key are estimates.
 
-**What to put under a short:** a soft, steady, loop-friendly bed in a minor key at about 90-110 bpm, no big drums, constant level, starting with the first word, voice 11 dB above it, no ducking needed. Build it with the repo's synthesizer (`templates/audio/instruments.py`: `pad`, `pluck`, `musicbox`, `vibes`) or any licensed track; keep it quieter than the voice and constant.
+- **A soft, steady bed under the whole story.** Starts with the first word, ends with the last; no intro, no outro tail, no swells (level moves within about +-1 dB) and essentially no ducking.
+- **Level:** the voice sits well above it. Stem measurement: 15-20 dB (median 17.8); the first mixed-audio estimate said about 11 dB. The two disagree, so **start the bed 14-16 dB under the voice** and lower it if it competes with the words.
+- **Sound:** minor-leaning (8 of 10; A, E, D minor), about 95-120 bpm (estimate), no drum beat (pulse strength 0.1), about 3 soft note onsets per second, sustained tones over percussion, warm (spectral centre about 1.5 kHz, little above 4-5 kHz), narrow stereo.
+- **Build it** with the repo's synthesizer (`templates/audio/instruments.py`: `pad`, `pluck`, `musicbox`, `vibes`) or a licensed track; constant level; master the mix to -11 LUFS, true peak <= -1.2 dBTP.
 
 ## D. Converting between formats
 
@@ -102,5 +101,5 @@ Measured as ratios to the same video's own median sentence, so they transfer to 
 - 16 shorts from what look like one or a few channels: this is *a* measured house style, not a law of the medium.
 - Sentence boundaries come from Whisper punctuation; a few shorts were transcribed with long run-on sentences, which blurs the sentence-length numbers.
 - Pitch is the weakest measurement. Timing and loudness are the strongest.
-- Music was read from the mixed audio (see section C).
+- Music: read from separated stems of 10 of the 16 shorts; level estimates from stems and from the mix disagree (see C).
 - The voice model can follow the plan's timing, pauses and pushes; it cannot follow pitch melody or real emotion. Judge by ear, keep the user in the loop.

@@ -18,7 +18,7 @@ Full tables: [references/LONG_FORM_DATA.md](references/LONG_FORM_DATA.md). Numbe
 3. **Check:** `python skills/_shared/script_check.py script.txt --format long`.
 4. **Plan the delivery:** `python skills/_shared/delivery_plan.py script.txt --format long --out <workspace>` (long scripts are split into takes of up to 4 sentences / 70 words).
 5. **Build the voice:** `python skills/_shared/build_voice.py <workspace>` (Qwen3-TTS 1.7B). Long scripts take time on a CPU (about 16x real time): generate section by section and keep finished takes (they are cached per take).
-6. **Music** (C) and **mix**: voice about 11 dB above the bed, master -12.4 LUFS, true peak <= -1.2 dBTP.
+6. **Music** (C) and **mix**: voice about 12 dB above the bed (10-13), master -12.4 LUFS, true peak <= -1.2 dBTP.
 7. **You cannot hear audio.** Never claim the voice sounds good: export layers, report measured numbers, ask the user to listen.
 
 ## A. The script structure (what the 4 long videos do)
@@ -63,13 +63,12 @@ Ratios are to the same video's own median sentence. `delivery_plan.py` writes a 
 
 ## C. Music
 
-**Provisional (v1, from the mixed audio; tempo and key are estimates):**
-- A **mellower, steady bed under the whole video**: brightness (spectral centre) 1.4-2.2 kHz vs 3.5-5.3 kHz in shorts; the level stays within about +-0.7 dB through the video and **fades down about 4.6 dB in the last tenth**; 0.4-0.9 s of music after the last word, and in two videos the bed ends in silence.
-- **Level:** voice about 11 dB above the bed (9.4-12.3 dB). No measurable ducking.
-- **Character:** no strong drum pulse (beat strength near zero); tempo estimates about 94-107 bpm (weak); keys E minor (2), E major, D major - both modes occur, so "warm and sustained" matters more than major or minor.
-- Separated-music analysis (v2): [references/MUSIC.md](references/MUSIC.md) when present; prefer its numbers.
+Measured from the **separated music stems** of the first 2 minutes of each of 4 long videos (full tables: [references/MUSIC.md](references/MUSIC.md)). Very small sample; tempo and key are estimates.
 
-**What to put under a long video:** a warm, mellow, slowly moving pad-and-plucks bed at about 95-105 bpm, constant level 11 dB under the voice, no ducking, a 3-4 dB fade in the last tenth, ending 0.5 s after the last word (plus a longer tail if there is an end screen).
+- **A warm, spacious bed under the whole video**, closer to the voice than in a short: voice 10-13 dB above it (median 12), with a slight dip of about 2-3 dB while the voice speaks.
+- **Sound:** about 100-108 bpm (estimate; one video 129), a soft pulse in two of four, about 3 note onsets per second, very sustained (almost no percussion), dark and warm (spectral centre about 1.1 kHz, bass-heavy, soft top), wider stereo than a short; major and minor both occur.
+- **Over the video:** level stays within about +-0.7 dB, then fades about 4 dB in the last tenth; music starts with or just before the first word (median 0.2 s) and ends 0.4-0.9 s after the last word (in two videos the bed ends in silence). Allow a longer tail if there is an end screen.
+- **Build it** as a slow pad with a few soft plucks (`templates/audio/instruments.py`) or a licensed track; master -12.4 LUFS, true peak <= -1.2 dBTP.
 
 ## D. Converting between formats
 
@@ -87,5 +86,5 @@ Ratios are to the same video's own median sentence. `delivery_plan.py` writes a 
 - **4 videos, probably more than one creator**: weak evidence. Add more long videos to `style-study` and re-run the analysis to tighten every range.
 - Section boundaries are approximate; the first/last-sentence delivery numbers rest on 4 sentences.
 - Pitch is the weakest measurement; timing and loudness are the strongest.
-- Music was read from the mixed audio (see C).
+- Music: read from separated stems of only the first 2 minutes of each of 4 videos (see C).
 - The voice model can follow timing, pauses and pushes, not pitch melody or real emotion. The user's ear decides.
